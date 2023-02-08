@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Hype Tabs",
+    "version": "1.0",
+    "description": "Add fun colors to your tabs.",
+    "homepage_url": "https://github.com/ossd-s23/Hype-Tabs",
+    "icons": {
+        "48": "icons/hype-tabs-48.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {}
+}
