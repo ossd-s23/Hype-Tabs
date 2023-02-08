@@ -1,18 +1,20 @@
-browser.tabs.onActivated.addListener(changeTabColor);
+browser.browserAction.onClicked.addListener(changeTabColor);
+
 function changeTabColor() {
     browser.tabs.query({active:true, currentWindow: true})
       .then((tabs) => {
         const activeTab = tabs[0].id;
         browser.tabs.executeScript(activeTab, {
-          code: `document.body.style.backgroundColor = "green"`
-        });
-        // browser.browserAction.setIcon({
-        //     tabId: activeTab,
-        //     48: "icons/hype-tabs-48.png",
-        // })
-        // browser.browserAction.setTitle({
-        //     title: "COOL"
-        // })
+            code: `document.body.style.backgroundColor = "green"`
+          });
+      });
+
+  }
+browser.tabs.onActivated.addListener(toGoogle);
+function toGoogle() {
+    browser.tabs.query({active:true, currentWindow: true})
+      .then((tabs) => {
+        const activeTab = tabs[0].id;
         browser.tabs.update(
             activeTab,
             {url: "https://www.google.com"}
@@ -20,6 +22,3 @@ function changeTabColor() {
       });
 
   }
-// in background.js
-// browser.tabs.query({currentWindow: true}).then(changeTabColor());
-// changeTabColor();
