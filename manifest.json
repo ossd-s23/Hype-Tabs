@@ -11,19 +11,20 @@
         "activeTab",
         "tabs"
     ],
+    "browser_action": {},
     "content_scripts": [
         {
             "matches": [
                 "*://*.mozilla.org/*"
             ],
             "js": [
-                "tabs.js"
+                "hypeTabs.js"
             ]
         }
     ],
     "background": {
         "scripts": [
-            "tabs.js"
+            "hypeTabs.js"
         ]
     }
 }
