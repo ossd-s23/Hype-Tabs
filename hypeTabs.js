@@ -1,16 +1,25 @@
-document.body.style.border = "5px solid red";
-// in background.js
-browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    var activeTab = tabs[0];
-    browser.tabs.onCreated.addListener(changeTabColor("red"));
-});
-  
-function changeTabColor(color) {
-    browser.tabs.query({currentWindow: true})
+browser.tabs.onActivated.addListener(changeTabColor);
+function changeTabColor() {
+    browser.tabs.query({active:true, currentWindow: true})
       .then((tabs) => {
-        const activeTab = tabs[0];
-        browser.tabs.executeScript({
-          code: `document.body.style.backgroundColor = "${color}"`
+        const activeTab = tabs[0].id;
+        browser.tabs.executeScript(activeTab, {
+          code: `document.body.style.backgroundColor = "green"`
         });
-    });
-}
+        // browser.browserAction.setIcon({
+        //     tabId: activeTab,
+        //     48: "icons/hype-tabs-48.png",
+        // })
+        // browser.browserAction.setTitle({
+        //     title: "COOL"
+        // })
+        browser.tabs.update(
+            activeTab,
+            {url: "https://www.google.com"}
+        )
+      });
+
+  }
+// in background.js
+// browser.tabs.query({currentWindow: true}).then(changeTabColor());
+// changeTabColor();
