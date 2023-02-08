@@ -15,7 +15,7 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.mozilla.org/*"
+                "<all_urls>"
             ],
             "js": [
                 "hypeTabs.js"
