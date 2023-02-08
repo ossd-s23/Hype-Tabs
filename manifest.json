@@ -8,7 +8,22 @@
         "48": "icons/hype-tabs-48.png"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "tabs"
     ],
-    "browser_action": {}
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.mozilla.org/*"
+            ],
+            "js": [
+                "tabs.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "tabs.js"
+        ]
+    }
 }
