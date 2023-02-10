@@ -8,23 +8,18 @@
         "48": "icons/hype-tabs-48.png"
     },
     "permissions": [
+        "<all_urls>",
         "activeTab",
-        "tabs"
+        "tabs",
+        "theme"
     ],
     "browser_action": {},
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "hypeTabs.js"
-            ]
-        }
-    ],
     "background": {
         "scripts": [
             "hypeTabs.js"
         ]
-    }
+    },
+    "web_accessible_resources": [
+        "icons/hype-tabs-48.png"
+    ]
 }
