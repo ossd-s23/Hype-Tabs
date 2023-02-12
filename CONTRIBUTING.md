@@ -21,4 +21,4 @@ When solving an issue or adding a new feature, please add documentation to your 
 
 ## Additional Questions
 
-If you have any additional questions or suggestions, you can join our [Discord](https://discord.gg/c6z9Y6UMbr).
+If you have any additional questions or suggestions, you can join our [Discord](https://discord.gg/c6z9Y6UMbr) or email any us at zrg228@nyu.edu, jiaojiajunqd@gmail.com, ld2298@nyu.edu, and jid9834@nyu.edu.
