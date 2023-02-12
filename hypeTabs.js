@@ -18,10 +18,16 @@ function changeTabColor(activeInfo) {
         });
 }
 
+function getRandomColor() {
+    const red = Math.floor((1 + Math.random()) * 256 / 2);
+    const green = Math.floor((1 + Math.random()) * 256 / 2);
+    const blue = Math.floor((1 + Math.random()) * 256 / 2);
+    return "rgb(" + red + ", " + green + ", " + blue + ")";
+}
+
 browser.tabs.onActivated.addListener(changeColor);
 function changeColor() {
-    const colors = ["red", "green", "blue", "yellow"];
-    const randColor = colors[Math.floor(Math.random() * colors.length)];
+    const randColor = getRandomColor();
     const theme = {
         colors: {
             toolbar: randColor,
@@ -29,8 +35,4 @@ function changeColor() {
         }
     };
     browser.theme.update(theme);
-    // browser.tabs.query({ currentWindow: true })
-    //     .then((tabs) => {
-    //         browser.theme.update(theme);
-    //     });
 }
