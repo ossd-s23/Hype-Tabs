@@ -9,7 +9,7 @@ Say "no more" to boring tabs. Hype-Tabs is Firefox add-on that will change the c
 4. Try it out! Hype Tabs should now be active until you restart Firefox.
 
 ## Contributing
-See our Contribution Guidelines [here](https://github.com/ossd-s23/Hype-Tabs/blob/main/CONTRIBUTING.md).
+See our Contribution Guidelines [here](https://github.com/ossd-s23/Hype-Tabs/blob/main/CONTRIBUTING.md). If you are interested in getting involved, feel free to also join our [Discord](https://discord.gg/c6z9Y6UMbr).
 
 ## License
 Hype Tabs is a Free and Open Source project [licensed](https://github.com/ossd-s23/Hype-Tabs/blob/main/LICENSE) under the MIT License.
