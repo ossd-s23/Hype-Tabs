@@ -18,3 +18,7 @@ We are open to the continuous development of our project so if you have an idea 
 ## Rule of Thumb 
 
 When solving an issue or adding a new feature, please add documentation to your code describing what each of your functions do or, if your contribution does not contain functions, add a small comment describing the functionality of the code you added (if your contribution is to the source code). 
+
+## Additional Questions
+
+If you have any additional questions or suggestions, you can join our [Discord](https://discord.gg/c6z9Y6UMbr) or email any us at zrg228@nyu.edu, jiaojiajunqd@gmail.com, ld2298@nyu.edu, and jid9834@nyu.edu.
