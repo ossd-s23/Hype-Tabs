@@ -7,7 +7,6 @@ function changeTabColor(activeInfo) {
                 const activeTab = tab.id;
                 browser.tabs.executeScript(activeTab, {
                     code: `
-                        document.body.style.backgroundColor = "green";
                         document.title = "HYPE";
                         document.querySelectorAll("link[rel*='icon']").forEach((element) => {
                             element.href = "${pngURL}";
