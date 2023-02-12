@@ -8,4 +8,4 @@
 
 ## Other Regulations
 
-For all other Code Of Conduct related information refer to [Mozzilla policies] (https://www.mozilla.org/en-US/about/governance/policies/participation/)
+For all other Code Of Conduct related information refer to [Mozzilla policies](https://www.mozilla.org/en-US/about/governance/policies/participation/)
